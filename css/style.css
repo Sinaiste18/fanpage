@@ -1,0 +1,379 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: 0;
+}
+body{
+    background-image: url(https://img.freepik.com/vector-gratis/fondo-plano-estilo-comic_23-2148807431.jpg?w=2000);
+    display: grid;
+
+}
+body .inicio{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+        "header"
+        "main"
+        "footer";
+}
+body .noticia{
+    display: grid;
+   
+    grid-template-areas:
+        "header"
+        "main"
+        "footer"; 
+    }
+/* barrade navegacion  */
+
+a{
+    text-decoration: none;
+    color: white;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bolder;
+    font-size: 20px;
+}
+p{
+     display: inline-block;
+     font-weight: bold;
+      
+      
+}
+
+.navegacion{
+    background-color: black;
+    display: flex;
+    justify-content:center;
+    width: 100%;
+    box-sizing: border-box;
+    
+}
+
+.logo{
+    margin-top: 5px;
+    width: 100px;
+    height: 100px;
+   
+}
+ nav ul li {
+     list-style: none;
+    text-decoration: none;
+    color:white;
+    display: inline-block;
+    align-items: center;
+    margin-left: 100px;
+    margin-bottom: 20px;
+}
+/* carrousel */
+
+main .inicio{
+   
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 2fr 4fr 1fr;
+    grid-template-areas:
+        "carrousel"
+        "noti"
+        "destacados"
+        "noti"
+        "destacados";
+}
+.grid-container {
+    /* declaramoes que es una grilla */
+    display:grid ;
+    /* definir dilas y la cantidad */
+    grid-template-rows: 150px 150px 150px; 
+    /* definir las columnas y la cantidad */
+    grid-template-columns: repeat(1, 1fr);
+    gap: 10px;
+}
+.grid-item {
+    border: black;
+}
+
+ .item-uno{ 
+     grid-column: 1/2;
+     /* desde que linea a que linea vaya este elemento */
+     grid-column-start:1 ;
+     grid-column-end:2;
+ }
+ 
+
+.item-dos{ 
+    grid-column: 2/3;
+    /* desde que linea a que linea vaya este elemento */
+    grid-column-start:2 ;
+    grid-column-end:3;
+}
+
+.item-tres{ 
+    grid-column: 3/4;
+    /* desde que linea a que linea vaya este elemento */
+    grid-column-start:3 ;
+    grid-column-end:4;
+    padding-right: 30px;
+}
+
+.banner{
+     display: flex;
+     flex-direction: row-reverse;
+    
+    
+}
+
+.banner-anime{
+    display: flex;
+    align-items: flex-end;
+    height: 200px;
+    padding-right: 60px; 
+    margin-right: 60px;
+    position: relative;
+}
+
+.dialogo-banner{
+   
+    background-color: white;
+    border: double black;
+    width: 100%;
+    padding: 25px;
+    margin: 10px;
+    margin-top: 65px;
+
+
+}
+
+.carrousel{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(5, 5, 5);
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-top: 10px;
+}
+
+
+.imagen-carro{ 
+    display: flex;
+    justify-content: space-around;
+    width: 400px;
+    height: 350px;
+    margin-left: 10px;
+    margin-right: 10px;
+    
+}
+
+
+/* titulo */
+h1{
+    
+    display: flex;
+    justify-content: center;
+    padding: 50px  25px;
+    font-size: 50px;
+   
+}
+
+    /* subtitulos */
+h2{
+    margin-left: 50px;
+    padding-left: 25px;
+    color:black;
+}
+
+h3{
+    font-size: 25px;
+    padding-left:50px;
+}
+/* section destacados */
+.destacados{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.img-destacados {
+    
+    width: 200px;
+    height: 100px;
+    
+ 
+}
+.img-destacados:hover {
+    filter: blur(5px); 
+  
+}
+/* section videos */
+.videos{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+
+}
+.vid{
+    padding-left: 10px;
+    margin-top: 10px;
+}
+ 
+/* section top 10 */
+.top10{
+    
+    display: flex;
+    justify-content: center;
+    
+
+    
+    width: 100%;
+}
+.img-top{
+    width: 450px;
+    height:450;
+    padding-left: 10px;
+    margin-top: 50px;
+    margin-bottom: 10px;
+}
+.img-top:hover {
+    filter: saturate(180%);
+
+}
+/* section noticias */
+.noticias{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+
+.noticias a{
+    color: black;
+    
+}
+/* enlace color */
+
+
+.img-noti{
+    
+    width: 400px;
+    height: 350px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    
+   
+
+}
+/* footer */
+footer{
+    display: block;
+    background-color: black;
+    margin-top: 70px;
+    padding-top: 30px;
+    padding-bottom: 10px;
+}
+footer p{
+    color: white;
+}
+/* pagina noticias */
+.buscar{
+    margin-top: 50px;
+    margin-left: 50px;
+    margin-bottom: 50px;
+}
+
+a .imge-noti{
+    width: 450px;
+    height: 400px;
+    padding-left: 50px;
+    padding-bottom: 50px;
+    
+ }
+ .imge-destacados {
+     display: inline;
+
+}
+.imge-destacados h3 {
+    margin-left: 50px;
+    padding-left: 50px;
+   
+
+}
+.imge-destacados .dest2{
+    margin-left: 500px;
+    padding-left: 410px;
+}
+.imge-destacados .dest3{
+    margin-left: 700px;
+    padding-left: 620px;
+}
+
+
+.numero1{
+    width: 700px;
+    margin-left: 100px;
+    border: dotted ;
+}
+.numero2{
+    width: 300px;
+    margin-left: 100px;
+    height: 400px;
+    border: dotted ;
+}
+.numero3{
+    width: 300px;
+    margin-left: 100px;
+    height: 400px;
+    border: dotted ;
+}
+p{
+    margin-left: 150px;
+    margin-right: 400px;
+}
+/* registro */
+
+section div{
+    display: inline-block;
+    padding: 30px; 
+    margin: 30px;
+    border: 50px;
+}
+.formulario1{
+    margin-left: 750px;
+}
+.form-contact{
+    width: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 30px;
+    margin: auto;
+    margin-top: 50px;
+    border-radius: 4px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: white;
+}
+.form-contact h3 {
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+.controls{
+    width: 340px;
+    background-color: #24303c;
+    padding: 12px;
+    border-radius: 4px;
+    margin: auto;
+    margin-bottom: 16px;
+    border: 1px solid #1f53c5;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 18px;
+
+}
+
+.submit {
+    width: 100px;
+    background: #1f53c5;
+    border: none;
+    padding: 12px;
+    color: white;
+    margin: 16px 0;
+    font-size: 16px;
+ }
+
+
